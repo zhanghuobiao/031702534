@@ -1,6 +1,9 @@
 #-*-coding:utf-8-*-
 import re
-str=input()
+while 1:
+    str=input()
+    if str=='END':
+       break
 tel=re.search("\d{11}",str).group()
 #print(tel)
 str=re.sub("\d{11}","",str)
